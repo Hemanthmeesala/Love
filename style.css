@@ -1,0 +1,362 @@
+/* General Styling
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+header {
+    background-color: #f8c1c1;
+    padding: 40px;
+    text-align: center;
+    border-bottom: 5px solid #d74c7e;
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 3em;
+    color: #d74c7e;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #5a5a5a;
+}
+
+nav {
+    background-color: #fcd9d9;
+    padding: 10px;
+    text-align: center;
+    animation: fadeInNav 1.5s ease-in;
+}
+
+@keyframes fadeInNav {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #d74c7e;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #a83f64;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-image {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeInImage 2s ease-in forwards;
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+button {
+    background-color: #d74c7e;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #a83f64;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #f8c1c1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.1em;
+    color: #888;
+    opacity: 0;
+    animation: fadeInFooter 2s ease-in forwards;
+}
+
+@keyframes fadeInFooter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Header */
+header {
+    background-color: #f8c1c1;
+    padding: 40px;
+    text-align: center;
+    border-bottom: 5px solid #d74c7e;
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 3em;
+    color: #d74c7e;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #5a5a5a;
+}
+
+/* Navigation - Sticky navbar */
+nav {
+    background-color: #fcd9d9;
+    padding: 10px;
+    text-align: center;
+    animation: fadeInNav 1.5s ease-in;
+    position: sticky;
+    top: 0;
+    z-index: 10; /* Ensures it stays on top of other elements */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+}
+
+@keyframes fadeInNav {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #d74c7e;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #a83f64;
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-image {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeInImage 2s ease-in forwards;
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Reduced Image Height by 70% (Set max-height to 30% of the original height) */
+.hero-image {
+    max-height: 30%;  /* Reduced height by 70% */
+    object-fit: cover;  /* Maintains aspect ratio without distortion */
+}
+
+/* Button Styling */
+button {
+    background-color: #d74c7e;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #a83f64;
+    transform: scale(1.1);
+}
+
+/* Footer */
+/* footer {
+    background-color: #f8c1c1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.1em;
+    color: #888;
+    opacity: 0;
+    animation: fadeInFooter 2s ease-in forwards;
+} */
+
+@keyframes fadeInFooter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Special Moments Section Styling */
+#special-moments {
+    padding: 50px 20px;
+    background-color: #fff0f0;
+    text-align: center;
+}
+
+.moment {
+    margin: 20px 0;
+}
+
+.hero-image {
+    width: 100%; /* Ensure full width of the container */
+    max-width: 600px; /* Max width to prevent it from becoming too large */
+    height: 300px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensures that the aspect ratio is maintained */
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeInImage 2s ease-in forwards;
+    margin-top: 20px;
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Special Moments Section Styling */
+#special-moments {
+    padding: 50px 20px;
+    background-color: #fff0f0;
+    text-align: center;
+}
+
+.moment {
+    margin: 20px 0;
+}
+
+.hero-image {
+    width: 100%; /* Ensure full width of the container */
+    max-width: 600px; /* Max width to prevent it from becoming too large */
+    height: auto; /* Adjust height based on aspect ratio to keep the entire image visible */
+    object-fit: contain; /* Ensures the entire image/video is visible without cropping */
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeInImage 2s ease-in forwards;
+    margin-top: 20px;
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
